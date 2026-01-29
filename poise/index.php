@@ -57,7 +57,7 @@
                         </span>
                     </a>
                     
-                    <a href="views/editar.php" class="px-8 py-4 bg-white border-2 border-amber-200 rounded-2xl text-amber-800 font-bold text-lg hover:bg-amber-50 hover:border-amber-400 transition-all flex items-center justify-center gap-2">
+                    <a href="views/LoginAdmin.php" class="px-8 py-4 bg-white border-2 border-amber-200 rounded-2xl text-amber-800 font-bold text-lg hover:bg-amber-50 hover:border-amber-400 transition-all flex items-center justify-center gap-2">
                         <i class="fas fa-user-shield"></i>
                         Sou Administrador
                     </a>
