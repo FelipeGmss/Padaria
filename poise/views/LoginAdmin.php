@@ -65,7 +65,7 @@
                         </div>
                         <input type="text" id="email" name="email" required 
                             class="w-full pl-12 pr-4 py-3 bg-gray-50 border-2 border-gray-100 rounded-xl focus:bg-white focus:border-amber-500 focus:outline-none transition-all font-medium text-gray-700 placeholder-gray-400" 
-                            placeholder="Ex: Pão de Queijo">
+                            placeholder="Email">
                     </div>
                 </div>
 
@@ -74,11 +74,11 @@
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1 ml-1">Senha</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                                <span class="text-gray-400 font-bold ml-0.5">R$</span>
+                                <span class="text-gray-400 font-bold ml-0.5">*</span>
                             </div>
                             <input type="password" step="0.01" id="senha" name="senha" required 
                                 class="w-full pl-12 pr-4 py-3 bg-gray-50 border-2 border-gray-100 rounded-xl focus:bg-white focus:border-amber-500 focus:outline-none transition-all font-medium text-gray-700 placeholder-gray-400"
-                                placeholder="0.00">
+                                placeholder="Senha">
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,6 @@
   </div>
 
   <script>
-    const input = document.getElementById('foto_produto');
     const preview = document.getElementById('preview');
     const container = document.getElementById('preview-container');
     const uploadText = document.getElementById('upload-text');
