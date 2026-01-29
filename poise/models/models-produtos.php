@@ -92,11 +92,10 @@ Class Clientes {
     public function login_admin($email, $senha) {
         $pdo = new PDO("mysql:host=localhost;dbname=padaria", "root", "");
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $senha_hash = md5($senha);
         $consulta = "SELECT * FROM clientes_admin WHERE email = :email AND senha = :senha";
         $query = $pdo->prepare($consulta);
         $query->bindValue(":email", $email);
-        $query->bindValue(":senha", $senha_hash);
+        $query->bindValue(":senha", $senha);
         $query->execute();
         return $query->fetch(PDO::FETCH_ASSOC);
     }
